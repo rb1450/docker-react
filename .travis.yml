@@ -6,4 +6,4 @@ before_install:
   - docker build -t rb1450/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run rb1450/docker-react npm run test -- --coverage
+  - docker run rb1450/docker-react npm run test -- --watchAll=false
